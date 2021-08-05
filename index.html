@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Bank Google Map</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="apple-touch-icon" sizes="192x192" href="icon-192x192.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="loader.css" />
-    <link rel="manifest" href="manifest.json">
-</head>
-<body onload="load()" class="load">
-    <div class="wrapper2>
- 		<div class="circle"></div>
-		<div class="circle"></div>
-		<div class="circle"></div>
-		<div class="shadow"></div>
-		<div class="shadow"></div>
-		<div class="shadow"></div>
-		<span>Loading...</span>
-    </div>
-</body> 
-<body class="white">
-    <form>
-    <label for="IP">IP address:</label><br>
-    <input type="text" id="IP" name="IP"><br>
-    <input type="submit" value="Submit (we won't sell your info!)">
-    <h1>Trying to find food banks near you?</h1>
-    <script src="script2.js"></script>
-    <h2>Map of food banks in Malaysia</h2>
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1yTJvpvz-Jih3nDR9qoP6g5Avn2Jky62b" width="1525" height="480"></iframe>
-    <h2>Map of Malaysia</h2>
-    <div id="map"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA03W-kOdi5xsVGgh7VyQVcSmKq68hk6fI&map_ids=dd123f1509656232&callback=initMap"></script>   
-    <script src="script.js" defer></script>-
-    <div id="installContainer">
-      <button id="butInstall" type="button">
-        Install
-      </button>
-    </div>
-    <script src="loader.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Bank Google Map</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="apple-touch-icon" sizes="192x192" href="icon-192x192.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="loader.css" />
+        <link rel="manifest" href="manifest.json">
+    </head>
+    <body onload="load()" class="load">
+        <div class="wrapper2>
+            <div class="circle"></div>
+	    <div class="circle"></div>
+	    <div class="circle"></div>
+	    <div class="shadow"></div>
+	    <div class="shadow"></div>
+	    <div class="shadow"></div>
+	    <span>Loading...</span>
+        </div>
+        <form>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+            <label for="IP">IP address:</label><br>
+            <input type="text" id="IP" name="IP"><br>
+            <input type="submit" value="Submit (we won't sell your info!)">
+            <h1>Trying to find food banks near you?</h1>
+            <script src="script2.js"></script>
+            <h2>Map of food banks in Malaysia</h2>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1yTJvpvz-Jih3nDR9qoP6g5Avn2Jky62b" width="1525" height="480"></iframe>
+            <h2>Map of Malaysia</h2>
+            <div id="map"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA03W-kOdi5xsVGgh7VyQVcSmKq68hk6fI&map_ids=dd123f1509656232&callback=initMap"></script>   
+            <script src="script.js" defer></script>-
+            <div id="installContainer">
+                <button id="butInstall" type="button">
+                Install
+                </button>
+            </div>
+            <script src="loader.js"></script>
+        </div>
+    </body>
 </html>
-
-
-

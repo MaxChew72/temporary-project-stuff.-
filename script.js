@@ -5,5 +5,6 @@ function initMap(){
         mapId: 'dd123f1509656232'
       });       
 }
+var data = <?php echo json_encode("$GET["IP"]", JSON_HEX_TAG); ?>;
 // 3.0437318334217314, 101.64207130064379 <-- Petaling, zoom=18
 // 3.129753736417666, 101.59581621196189 <-- Petaling Jaya, zoom=13

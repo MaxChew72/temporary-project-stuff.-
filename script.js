@@ -1,10 +1,20 @@
-function initMap(){
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 3.129753736417666 , lng: 101.59581621196189},
-        zoom: 13,
-        mapId: 'dd123f1509656232'
-      });       
+const divInstall = document.getElementById('installContainer');
+const butInstall = document.getElementById('butInstall');
+
+/* Only register a service worker if it's supported */
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js');
 }
-var data = <?php echo json_encode("$GET["IP"]", JSON_HEX_TAG); ?>;
-// 3.0437318334217314, 101.64207130064379 <-- Petaling, zoom=18
-// 3.129753736417666, 101.59581621196189 <-- Petaling Jaya, zoom=13
+
+/**
+ * Warn the page must be served over HTTPS
+ * The `beforeinstallprompt` event won't fire if the page is served over HTTP.
+ * Installability requires a service worker with a fetch event handler, and
+ * if the page isn't served over HTTPS, the service worker won't load.
+ */
+if (window.location.protocol === 'http:') {
+  const requireHTTPS = document.getElementById('requireHTTPS');
+  const link = requireHTTPS.querySelector('a');
+  link.href = window.location.href.replace('http://', 'https://');
+  requireHTTPS.classList.remove('hidden');
+}

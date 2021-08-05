@@ -11,7 +11,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
 </head>
-<body>
+<body onload="load()" class="load">
+    <div class="wrapper2>
+ 		<div class="circle"></div>
+		<div class="circle"></div>
+		<div class="circle"></div>
+		<div class="shadow"></div>
+		<div class="shadow"></div>
+		<div class="shadow"></div>
+		<span>Loading...</span>
+    </div>
+</body> 
+<body class="white">
     <form>
     <label for="IP">IP address:</label><br>
     <input type="text" id="IP" name="IP"><br>
@@ -29,6 +40,7 @@
         Install
       </button>
     </div>
+    <script src="loader.js"></script>
 </body>
 </html>
 

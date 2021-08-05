@@ -44,3 +44,9 @@ h2 {
   font-size: 1em;
   padding: 0.75em;
 }
+.load {
+    background-color: rgb(28, 231, 221);
+}
+.white {
+    background-color: rgb(255, 255, 255);
+}

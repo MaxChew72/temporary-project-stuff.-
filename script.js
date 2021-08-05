@@ -14,7 +14,7 @@ function showLocation(position) {
     + position.coords.longitude;
     var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
     +latlongvalue+"&amp;zoom=14&amp;size=400x300&amp";key
-    ="AIzaSyAa8HeLH2lQMbPeOiMlM9D1VxZ7pbGQq8o";
+    ="-AIzaSyA03W-kOdi5xsVGgh7VyQVcSmKq68hk6fI";
     document.getElementById("mapholder").innerHTML =
     "<img src='"+img_url+"'>";
  }

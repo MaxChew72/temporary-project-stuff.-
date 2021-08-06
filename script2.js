@@ -5,7 +5,6 @@ function initMap(){
         mapId: 'dd123f1509656232'
       });       
 }
-// <![CDATA[  <-- For SVG support
 if ('WebSocket' in window) {
     (function () {
         function refreshCSS() {
@@ -38,7 +37,5 @@ if ('WebSocket' in window) {
 } else {
     console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 }
-// ]]>
-var data = <?php echo json_encode("$_GET["IP"]", JSON_HEX_TAG); ?>; // Don't forget the extra semicolon!
-// 3.0437318334217314, 101.64207130064379 <-- Petaling, zoom=18
-// 3.129753736417666, 101.59581621196189 <-- Petaling Jaya, zoom=13
+var data = <?php echo json_encode("$_GET["IP"]", JSON_HEX_TAG); ?>;
+

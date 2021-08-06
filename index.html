@@ -13,17 +13,20 @@
         <link rel="stylesheet" href="loader.css" />
         <link rel="manifest" href="manifest.json">
     </head>
-    <body onload="load()">
-        <div class="wrapper2">
-            <div class="circle"></div>
-	    <div class="circle"></div>
-	    <div class="circle"></div>
-	    <div class="shadow"></div>
-	    <div class="shadow"></div>
-	    <div class="shadow"></div>
-	    <span>Loading...</span>
-        </div>
-        <div style="display:none;" id="myDiv" class="animate-bottom">
+   <body onload="load()" class="normal">
+      <div class="wrapper2">
+         <div class="circle"></div>
+         <div class="circle"></div>
+         <div class="circle"></div>
+         <div class="shadow"></div>
+         <div class="shadow"></div>
+         <div class="shadow"></div>
+         <span>Loading...</span>
+      </div>
+   </body>
+   <body>
+      <div style="display:none;" id="myDiv" class="animate-bottom">
+         <div class="background">
 	<form>
             <label for="IP">IP address:</label><br>
             <input type="text" id="IP" name="IP"><br>
@@ -38,6 +41,9 @@
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA03W-kOdi5xsVGgh7VyQVcSmKq68hk6fI&map_ids=dd123f1509656232&callback=initMap"></script>   
             <script src="script.js" defer></script>-
             <script src="loader.js"></script>
-        </div>
-    </body>
+         </div>
+      </div>
+      </div>
+      </div>
+   </body>
 </html>

@@ -2,10 +2,11 @@ html {
     box-sizing: border-box;
     font-size: 100%;
 }
-
+* {
+    background-color: #e03434
+}
 *, *::before, *::after {
     box-sizing: inherit;
-    background-color: #e03434
 }
 
 body {

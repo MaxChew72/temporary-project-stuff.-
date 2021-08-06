@@ -1,3 +1,6 @@
+.normal {
+	background-color: #28ecdc;
+}
 .animate-bottom {
      position: relative;
      -webkit-animation-name: animatebottom;
@@ -28,6 +31,7 @@
  #myDiv {
      display: none;
      text-align: center;
+		 background-color: #fff
 }
 .wrapper2 {
 	width: 200px;
@@ -36,6 +40,7 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	background-color: #28ecdc;
 }
 
 .circle {
